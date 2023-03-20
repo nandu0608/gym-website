@@ -1,0 +1,11 @@
+.gototop{
+    color:darkorange;
+    background-color: white;
+    border-radius: 3rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: 5%;
+    right:3%;
+    z-index: 9;
+    animation:1.2s linear infinite alternate-reverse;
+}

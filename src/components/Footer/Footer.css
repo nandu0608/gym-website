@@ -1,0 +1,109 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-container>hr{
+    border:  1px solid var(--lightgray);
+    width: 100%;
+}
+.footer{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer-nav, .connect, .contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 33%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+}
+.footer-nav{
+    gap: 0.3rem;
+    padding-left: 2rem;
+}
+.footer-nav h3{
+    cursor: pointer;
+}
+.footer-nav h3:hover{
+    color: darkorange;
+    transform: scale(1.1);
+}
+
+.connect div div{
+    display: flex;
+    gap:1rem;
+    padding: 1rem;
+    cursor: pointer;
+    align-items: center;
+}
+.connect div div span:hover{
+    color: darkorange;
+    transform: scale(1.1);
+}
+.linkedin:hover{
+    fill:#0A66C2;
+    transform: scale(1.1);
+}
+.insta:hover{
+    fill:  #C13584;
+    transform: scale(1.1);
+}
+.fb:hover{
+    fill: #3b5998;
+    transform: scale(1.1);
+}
+.yt:hover{
+    fill:#FF0000;
+    transform: scale(1.1);
+}
+.contact-us{
+    padding-top: 2rem;
+}
+.contact-us img {
+  height: 3rem;
+}
+.contact-us div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.copyright{
+    position: relative;
+    top: 95px;
+    padding: 1rem;
+    color: black;
+    font-size: x-large;
+    align-self: center;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    
+}
+.copyright span{
+    color: darkorange;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-nav, .connect, .contact-us{
+        width: 100%;
+        align-items: flex-start
+    }
+    .copyright{
+        font-size: smaller;
+      
+    }
+}
